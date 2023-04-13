@@ -9,11 +9,12 @@
 
 <body>
 <p>
-    <a href="{{ Route('home') }}">Home</a>
-    <a href="{{ Route('Asignacion') }}">Asignacion</a>
-    <a href="{{ Route('Clientes') }}">Clientes</a>
-    <a href="{{ Route('Mensajeros') }}">Mensajeros</a>
-    <a href="{{ Route('Consultas') }}">Consulta</a>
+    <a href="{{ Route('home') }}">Home</a>&nbsp&nbsp&nbsp&nbsp
+    <a href="{{ Route('Asignacion') }}">Asignacion</a>&nbsp&nbsp&nbsp&nbsp
+    <a href="{{ Route('Clientes') }}">Clientes</a>&nbsp&nbsp&nbsp&nbsp
+    <a href="{{ Route('Mensajeros') }}">Mensajeros</a>&nbsp&nbsp&nbsp&nbsp
+    <a href="{{ Route('Consultas') }}">Consulta</a>&nbsp&nbsp&nbsp&nbsp
+    <a href="{{ Route('Usuarios') }}">Usuarios</a>
 </p>
 
 <hr>

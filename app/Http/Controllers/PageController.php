@@ -22,19 +22,27 @@ class PageController extends Controller
         return view('Clientes');
     }
 
-    public function Mensajeros()
+    public function Mensajeros(Request $request)
     {
-        return view('Mensajeros');
+        $ced = $request->input('CedulasM');
+        $nom = $request->input('NombresM');
+
+        DB::insert('INSERT INTO mensajeros (MENced, MENnombre) VALUES (?, ?)', [$ced, $nom]);
+
+        return 'Mensajero creado correctamente';
     }
 
     public function Consultas()
     {
-        $asigs = [
-            [ ]
-
-        ];
+        $asigs = [ ];
 
         $asigs = DB::table('asignacion')->get();
         return view('Consultas', [ 'asigs' => $asigs]);
     }
+
+    public function Usuarios()
+    {
+        return view('Usuarios');
+    }
+
 }

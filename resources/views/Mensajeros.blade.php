@@ -7,7 +7,7 @@
   <body>
 
     <form>
-    
+    @csrf
     <p>Registro Mensajero</p>
 
     <div>

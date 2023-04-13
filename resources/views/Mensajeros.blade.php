@@ -10,14 +10,14 @@
     @csrf
     <p>Registro Mensajero</p>
 
-    <div>
+
     <label>Cedula</label>
-    <input type="number" id="CE" name="CedulasM" placeholder='Ingrese numero de cedula' required><br><br>
+    <input type="number" id="CE" name="CedulasM" placeholder='Ingrese numero de cedula' required>
 
     <label >Nombres y apellidos</label>
-    <input type="text" id="Mna" name="NombresM" placeholder='Ingrese Nombres' required><br><br>
+    <input type="text" id="Mna" name="NombresM" placeholder='Ingrese Nombres' required>
 
-    </div>
+
     <input type="submit" id="Asi" value="Guardar"/>
 
     </form>

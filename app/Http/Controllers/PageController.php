@@ -29,7 +29,7 @@ class PageController extends Controller
 
         DB::insert('INSERT INTO mensajeros (MENced, MENnombre) VALUES (?, ?)', [$ced, $nom]);
 
-        return 'Mensajero creado correctamente';
+        return view('Mensajeros');
     }
 
     public function Consultas()

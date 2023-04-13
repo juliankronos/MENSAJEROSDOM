@@ -12,26 +12,24 @@
 
         <p class="title">Registro Usuarios</p>
 
-        <div>
         <label for="Usced">Cedula</label>
-        <input type="number" id="CE" name="Cedulas" placeholder='Ingrese numero de cedula' required><br><br>
+        <input type="number" id="CE" name="Cedulas" placeholder='Ingrese numero de cedula' required>
 
         <label for="Nom">Nombres</label>
-        <input type="text" id="Usna" name="Nombrescom" placeholder='Ingrese Nombres' required><br><br>
+        <input type="text" id="Usna" name="Nombrescom" placeholder='Ingrese Nombres' required>
 
         <label for="Ape">Apellidos</label>
-        <input type="text" id="Usap" name="Apellidoscom" placeholder='Ingrese Apellidos' required><br><br>
+        <input type="text" id="Usap" name="Apellidoscom" placeholder='Ingrese Apellidos' required>
 
         <label for="Car">Cargo</label>
-        <input type="text" id="UScar" name="Cargos" placeholder='Ingrese Cargo' required><br><br>
+        <input type="text" id="UScar" name="Cargos" placeholder='Ingrese Cargo' required>
 
         <label for="NI">NICK</label>
-        <input type="text" id="USni" name="nick" placeholder='Ingrese Nick' required><br><br>
+        <input type="text" id="USni" name="nick" placeholder='Ingrese Nick' required>
 
         <label for="Pass">Password</label>
-        <input type="text" id="USpas" name="PAssword" placeholder='Ingrese una contraseña' required><br><br>
+        <input type="text" id="USpas" name="PAssword" placeholder='Ingrese una contraseña' required>
 
-        </div>
         <input type="submit" id="Asi" value="Guardar"/>
 
         </form>

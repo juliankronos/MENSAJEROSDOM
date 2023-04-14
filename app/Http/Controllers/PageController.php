@@ -9,12 +9,26 @@ class PageController extends Controller
 {
     public function home()
     {
+
         return view('home');
     }
 
-    public function Asignacion()
+    public function Asignacion(Request $request)
     {
-        return view('Asignacion');
+
+        $man = $request->input('Usuarios');
+        $sed = $request->input('Sedes');
+        $ciu = $request->input('Ciudades');
+        $men = $request->input('Mensajeros');
+        $veh = $request->input('Vehiculos');
+        $pla = $request->input('Placa');
+        $cli = $request->input('Clientes');
+        $gui = $request->input('Guias');
+
+        DB::insert('insert into asignacion (USUARIO, SEDE, CIUDAD, MENSAJERO, VEHICULO, PLACA, CLIENTE, GUIA) values (?, ?, ?, ?, ?, ?, ?, ?)' , [$man, $sed, $ciu, $men, $veh, $pla, $cli, $gui]);
+
+        return view('Asignacion',);
+
     }
 
     public function Clientes(Request $request)

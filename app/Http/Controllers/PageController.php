@@ -17,8 +17,17 @@ class PageController extends Controller
         return view('Asignacion');
     }
 
-    public function Clientes()
+    public function Clientes(Request $request)
     {
+
+        $cedu = $request->input('Cedulasa');
+        $nomb = $request->input('Nombresa');
+        $apel = $request->input('Apellidosa');
+        $tel  = $request->input('Telefonos');
+        $age  = $request->input('Edades');
+
+        DB::insert('insert into clientes (Ced, Clinombres, Cliapellidos, Clitelefono, Cliedad) values (?, ?, ?, ?, ?)' , [$cedu, $nomb, $apel, $tel, $age]);
+
         return view('Clientes');
     }
 
@@ -40,8 +49,18 @@ class PageController extends Controller
         return view('Consultas', [ 'asigs' => $asigs]);
     }
 
-    public function Usuarios()
+    public function Usuarios(Request $request)
     {
+
+        $ceed  = $request->input('Cedulas');
+        $noom  = $request->input('Nombrescom');
+        $apell = $request->input('Apellidoscom');
+        $carg  = $request->input('Cargos');
+        $nick  = $request->input('nick');
+        $pass  = $request->input('Password');
+
+        DB::insert('insert into usuarios (USid, USnombres, USapellidos, UScargo, USnick, USpassword) values (?, ?, ?, ?, ?, ?)', [$ceed, $noom, $apell, $carg, $nick, $pass]);
+
         return view('Usuarios');
     }
 

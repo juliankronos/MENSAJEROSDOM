@@ -28,7 +28,7 @@
         <input type="text" id="USni" name="nick" placeholder='Ingrese Nick' required>
 
         <label for="Pass">Password</label>
-        <input type="text" id="USpas" name="PAssword" placeholder='Ingrese una contraseña' required>
+        <input type="text" id="USpas" name="Password" placeholder='Ingrese una contraseña' required>
 
         <input type="submit" id="Asi" value="Guardar"/>
 

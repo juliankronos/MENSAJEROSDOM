@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\asignacion;
+use App\Models\asignacions;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -11,7 +11,7 @@ class AsignacionController extends Controller
 
     public function index()
     {
-        return asignacion::all();
+        return asignacions::all();
     }
 
 
@@ -23,7 +23,7 @@ class AsignacionController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(asignacion $asignacion)
+    public function show(asignacions $asignacion)
     {
         //
     }
@@ -31,7 +31,7 @@ class AsignacionController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, asignacion $asignacion)
+    public function update(Request $request, asignacions $asignacion)
     {
         //
     }
@@ -39,7 +39,7 @@ class AsignacionController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(asignacion $asignacion)
+    public function destroy(asignacions $asignacion)
     {
         //
     }

@@ -25,7 +25,7 @@ class PageController extends Controller
         $cli = $request->input('Clientes');
         $gui = $request->input('Guias');
 
-        DB::insert('insert into asignacion (USUARIO, SEDE, CIUDAD, MENSAJERO, VEHICULO, PLACA, CLIENTE, GUIA) values (?, ?, ?, ?, ?, ?, ?, ?)' , [$man, $sed, $ciu, $men, $veh, $pla, $cli, $gui]);
+        DB::insert('insert into asignacions (USUARIO, SEDE, CIUDAD, MENSAJERO, VEHICULO, PLACA, CLIENTE, GUIA) values (?, ?, ?, ?, ?, ?, ?, ?)' , [$man, $sed, $ciu, $men, $veh, $pla, $cli, $gui]);
 
         return view('Asignacion',);
 

@@ -24,12 +24,6 @@
         <label for="Car">Cargo</label>
         <input type="text" id="UScar" name="Cargos" placeholder='Ingrese Cargo' required>
 
-        <label for="NI">NICK</label>
-        <input type="text" id="USni" name="nick" placeholder='Ingrese Nick' required>
-
-        <label for="Pass">Password</label>
-        <input type="text" id="USpas" name="Password" placeholder='Ingrese una contraseña' required>
-
         <input type="submit" id="Asi" value="Guardar"/>
 
         </form>

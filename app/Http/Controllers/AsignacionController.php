@@ -11,7 +11,8 @@ class AsignacionController extends Controller
 
     public function index()
     {
-        return asignacions::all();
+        return DB::select('SELECT MENSAJERO,  COUNT(*) as Cant_Asignaciones FROM asignacions GROUP BY MENSAJERO ORDER BY Cant_Asignaciones DESC LIMIT 1');
+
     }
 
 
@@ -25,7 +26,7 @@ class AsignacionController extends Controller
      */
     public function show(asignacions $asignacion)
     {
-        //
+        return $asignacion;
     }
 
     /**

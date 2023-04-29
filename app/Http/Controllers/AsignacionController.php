@@ -15,33 +15,4 @@ class AsignacionController extends Controller
 
     }
 
-
-    public function store(Request $request)
-    {
-        //
-    }
-
-    /**
-     * Display the specified resource.
-     */
-    public function show(asignacions $asignacion)
-    {
-        return $asignacion;
-    }
-
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(Request $request, asignacions $asignacion)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy(asignacions $asignacion)
-    {
-        //
-    }
 }
